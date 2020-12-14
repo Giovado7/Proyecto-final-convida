@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.convida.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/ir1"
+            app:destination="@id/menuActivity2" />
+    </activity>
+    <activity
+        android:id="@+id/menuActivity2"
+        android:name="com.example.convida.MenuActivity2"
+        android:label="activity_menu2"
+        tools:layout="@layout/activity_menu2" >
+        <action
+            android:id="@+id/id3"
+            app:destination="@id/cuestionario2" />
+        <action
+            android:id="@+id/con4"
+            app:destination="@id/directorio2" />
+        <action
+            android:id="@+id/con42"
+            app:destination="@id/informa2" >
+            <action
+                android:id="@+id/con5"
+                app:destination="@id/mapas2" />
+        </action>
+        <action
+            android:id="@+id/con6"
+            app:destination="@id/mapas2" />
+    </activity>
+    <activity
+        android:id="@+id/mapas2"
+        android:name="com.example.convida.Mapas2"
+        android:label="activity_mapas2"
+        tools:layout="@layout/activity_mapas2" />
+    <activity
+        android:id="@+id/cuestionario2"
+        android:name="com.example.convida.Cuestionario2"
+        android:label="activity_cuestionario2"
+        tools:layout="@layout/activity_cuestionario2" />
+    <activity
+        android:id="@+id/directorio2"
+        android:name="com.example.convida.Directorio2"
+        android:label="activity_directorio2"
+        tools:layout="@layout/activity_directorio2" />
+    <activity
+        android:id="@+id/informa2"
+        android:name="com.example.convida.Informa2"
+        android:label="activity_informa2"
+        tools:layout="@layout/activity_informa2" />
+</navigation>
